@@ -36,7 +36,7 @@ namespace Demo
             get;
         }
         private int score;//这是一个字段
-        //一下是该字段的get set访问器
+        //以下是该字段的get set访问器
         public int getScore()
         {
             return this.score;
@@ -61,7 +61,7 @@ namespace Demo
             get;
             private set;
         }
-        ~Student()//与Java不同的是 C#拥有像C++一样的析构器 可以在对象被销毁时做一些后处理
+        ~Student()//与Java不同的是 C#拥有像C++一样的析构器 可以在对象被销毁时做一些后处理 与C++不同的是 析构器不能被权限修饰符修饰
         {
             Console.WriteLine("析构器被调用.");
         }
